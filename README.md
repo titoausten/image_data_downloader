@@ -15,7 +15,7 @@ git clone https://github.com/titoausten/image_data_downloader.git
 
 2. Run the script:
 ```
-python image_data_downloader.py
+python image_data_download.py
 ```
 
 
