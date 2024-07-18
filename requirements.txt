@@ -1,1 +1,4 @@
 bing-image-downloader
+python-box==6.0.2
+pyYAML
+opencv-python
