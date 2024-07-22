@@ -89,6 +89,7 @@ def rename_image_files(folder: str, query: str) -> None:
         raise CustomException(e, sys)
 
 
+'''
 def crop_image(folder: str, pixel_value: int, scale_percent: int) -> None:
     """
     Crops images in a specified folder to a specified pixel value and scales them.
@@ -98,7 +99,7 @@ def crop_image(folder: str, pixel_value: int, scale_percent: int) -> None:
         pixel_value (int): The desired pixel size for cropping.
         scale_percent (int): The percentage to scale down the images.
     """
-    for filename in os.listdir(folder):
+    for filename in os.listdir(folder):google
         image_path = os.path.join(folder, filename)
 
         if os.path.isfile(image_path):
@@ -124,6 +125,7 @@ def crop_image(folder: str, pixel_value: int, scale_percent: int) -> None:
                 new_filename = f"{base}_crop{file_extension}"
 
                 cv.imwrite(new_filename, img)
+'''
 
 
 def main():
@@ -151,7 +153,7 @@ def main():
         # Rename files according to queries
         rename_image_files(f"{image_data_dir}/{query}/", query)
         # Crop image to pixel values
-        crop_image(f"{image_data_dir}/{query}/", config.pixel_value, config.scale_percent)
+        # crop_image(f"{image_data_dir}/{query}/", config.pixel_value, config.scale_percent)
 
 
 if __name__ == "__main__":
